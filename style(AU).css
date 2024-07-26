@@ -1,0 +1,626 @@
+@font-face {
+  font-family: 'titlefont';  /* Give your font a name */
+  src: url('fonts/title-font.ttf'); /* Replace with actual file path */
+}
+@font-face {
+  font-family: 'headfont';  /* Give your font a name */
+  src: url('fonts/vanclufont.ttf'); /* Replace with actual file path */
+}
+@font-face {
+  font-family: 'textfont';  /* Give your font a name */
+  src: url('fonts/text\ font.ttf'); /* Replace with actual file path */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url(images/bg2.1.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  background-color: #ffffff;
+  margin-top: -40px;
+  margin-bottom: 3px; 
+  padding-top: 50px;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  font-family: "titlefont";
+  letter-spacing: 10px;
+  font-size: 60px;
+  overflow-x: hidden;
+  border-radius: 25px;
+}  
+.circle {
+  width: 180px;  
+  height: 180px;  
+  background-color: #ffffff;  
+  background-image: url(images/CLUB\ LOGO.png);
+  background-size: cover;
+  border-radius: 50%; 
+  margin: 0; 
+  padding: 20px; 
+  box-sizing: border-box;  
+  margin-top: -30px;
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+.sib {
+  background-image: url(images/side\ button.png);
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  cursor: pointer;
+  border: 3px solid #000000;   
+}
+
+.A-text {
+  color: black;
+  padding-top: 5px;
+  top: 12px;
+}
+
+.B-text {
+  color: #119ED5;
+  padding-top: 5px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+main {
+  padding: 1rem;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px; /* Adjust to position main content correctly */
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 300px;  
+  height: 300px;  
+  background-color: #ffffff;  
+  background-image: url(images/CLUB\ LOGO.png);
+  background-size: cover;
+  border: 5px solid #119ED5; 
+  border-radius: 50%; 
+  margin: 0; 
+  padding: 20px; 
+  box-sizing: border-box;  
+} 
+
+.clu {
+  color: rgb(255, 255, 255);
+  padding-top: 5px;
+  top: 12px;
+}
+
+.van {
+  color: #119ED5;
+  padding-top: 5px;
+}
+
+.vanclu {
+  font-size: 72px;
+  font-family: "headfont";
+  font-weight: 300;
+  font-style: bold;
+}
+
+.date {
+  color: #119ED5;
+}
+
+.prof {
+  color: #FF3131;
+}
+
+.exp {
+  color: white;
+  font-family: "headfont";
+  font-size: 35px;
+}
+
+.clubs {
+  height: 40px;
+  width: 250px;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.clubs:hover{
+  height: 40px;
+  width: 250px;
+  background-color: rgb(0, 0, 0);
+  color: #FF3131;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cstu {
+  font-family: "headfont";
+  font-size: 20px;
+  padding-top: 5px;
+  color: #119ED5;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .head {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+  .rect {
+    height: 40px;
+    margin-top: -20px;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    top: 0px; 
+    left: 0px; 
+  }
+  .sib {
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    right: 20px;
+  }
+  .vanclu {
+    font-size: 50px;
+  }
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+  .exp {
+    font-size: 25px;
+  }
+  .clubs {
+    width: 200px;
+  }
+  .cstu {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .head {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .rect {
+    height: 30px;
+    margin-top: -15px;
+  }
+  .circle {
+    width: 70px;
+    height: 70px;
+    top: 5px; /* Adjust positioning */
+    left: 5px; /* Adjust positioning */
+    z-index: 10;
+  }
+  .sib {
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    right: 10px;
+  }
+  .vanclu {
+    font-size: 40px;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .exp {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .head {
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+  .rect {
+    height: 30px;
+    margin-top: -15px;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    top: 5px; /* Adjust positioning */
+    left: 5px; /* Adjust positioning */
+    z-index: 10;
+  }
+  .sib {
+    width: 80px;
+    height: 80px;
+    top: 15px;
+    right: 10px;
+  }
+  .vanclu {
+    font-size: 40px;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .exp {
+    font-size: 20px;
+  }
+}
+@keyframes dropdownAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reverseDropdownAnimation {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: -30px; /* Adjust as necessary to align below the button */
+  right: 0px; /* Align with the button's right edge */
+  background-color: #119ED5;
+  border-radius: 35px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 0;
+  display: none;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li {
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown ul li:last-child {
+  border-bottom: none;
+}
+
+.dropdown ul li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "textfont";
+  font-size: 200%;
+}
+
+.dropdown ul li a:hover {
+  background-color: #000000;
+  color: #FF3131;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .dropdown {
+    width: 150px;
+    right: 10px;
+  }
+}
+
+.spaceimg{
+  background-color: white;
+  border-radius: 50%;
+  border:black,5px;
+  width: 75px;
+  height: 75px;
+  padding: 7px;
+  border: 3px solid #000000;   
+  margin-top: 30px;
+  margin-left:  390px;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+}
+.depmem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.deps, .mems {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: #119ED5;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.txt {
+  font-family: "headfont";
+  font-size: 30px;
+  color: white;
+  padding-top: 20px; /* Adjust as needed to create space between the circle and the text */
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1200px) {
+  .deps, .mems {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .deps, .mems {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .deps, .mems {
+    height: 200px;
+    width: 200px;
+  }
+}
+.depmem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.deps{
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: #119ED5;
+  background-size: 75%;
+  background-image: url(images/icons/deps.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  cursor: pointer;
+  border: #000000 solid 5px;
+}
+.mems {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: #119ED5;
+  background-image: url(images/icons/mems.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  cursor: pointer;
+  border: #000000 solid 5px;
+}
+.deps:hover {
+  background-color: #FF3131; /* Change color on hover */
+  background-image: url(images/icons/deps.png); /* Keep the background image */
+  background-size: 70%; /* Keep the background size */
+  background-repeat: no-repeat; /* Ensure no repeat */
+  background-position: center; /* Center the background image */
+  border: #000000 solid 5px;
+}
+
+/* Hover effect for .mems */
+.mems:hover {
+  background-color: #FF3131; /* Change color on hover */
+  background-image: url(images/icons/mems.png); /* Keep the background image */
+  background-size: 70%; /* Keep the background size */
+  background-repeat: no-repeat; /* Ensure no repeat */
+  background-position: center; /* Center the background image */
+  border: black solid 5px;
+}
+
+.txt {
+  font-family: "headfont";
+  font-size: 30px;
+  color: white;
+  padding-top: 20px; /* Adjust as needed to create space between the circle and the text */
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1200px) {
+  .deps, .mems {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .deps, .mems {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .deps, .mems {
+    height: 200px;
+    width: 200px;
+  }
+}
+/*........................................................................................................*/
+.mode{
+  color: rgb(255, 255, 255);
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: -70px;
+  font-family: "headfont";
+}
+.space{
+  background-color: #119ED5;
+  padding-top: 20px;
+}
+/* The switch - the box around the slider */
+#theme-toggle-button {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 7em;
+  cursor: pointer;
+  margin-left: 350px;
+  margin-top: 0px;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
+/*.................................................................................................................*/
